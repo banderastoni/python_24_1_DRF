@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
     'users',
+    'vehicle',
 ]
 
 MIDDLEWARE = [
@@ -76,8 +77,8 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': BASE_DIR / 'DRF_24_1',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'drf_24_1',
         'USER': 'postgres',
         'PASSWORD': '12345',
         'HOST': '127.0.0.1',
